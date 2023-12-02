@@ -1,11 +1,17 @@
 import React from "react";
 import Clips from "./utils/Clips";
 import SocialLink from "./utils/SocialLink";
+import { useNavigate } from "react-router-dom";
 
-const Hero = ({
+function Hero ({
   heroapi: { title, subtitle, btntext, img, sociallinks, videos },
-}) => {
+}) 
+{
   // console.log(heroapi)
+  const navigate=useNavigate();
+  const exploreEventBtn=()=>{
+    navigate('/product');
+  }
   return (
     <>
       <div className="relative h-auto w-auto flex flex-col">
@@ -21,7 +27,7 @@ const Hero = ({
             <button
               type="button"
               className="button-theme bg-slate-200  shadow-slate-200 rounded-xl my-5"
-            >
+             onClick={exploreEventBtn}>
               {btntext}
             </button>
             <div className="grid items-center gap-5 md:gap-3 absolute top-[33vh] lg:top-[27vh] left-[11%] xl:left-0 w-auto h-auto">

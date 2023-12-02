@@ -344,35 +344,76 @@ const story = {
 };
 
 
-const footerAPI = {
-  titles: [ {title: "About Nike"},{title: "Get Help"},{title: "Company"} ],
-  links: [
-    [
-      {link: "News"},
-      {link: "Careers"},
-      {link: "Investors"},
-      {link: "Prupose"},
-      {link: "Sustainability"},
-    ],
-    [
-      {link: "Order Status"},
-      {link: "Shipping & Delivery"},
-      {link: "Payment Options"},
-      {link: "Gift Card Balance"},
-      {link: "Contact Us"},
-      {link: "FAQ"},
-      {link: "Blog"},
-    ],
-    [
-      {link: "Gift Cards"},
-      {link: "Promotions"},
-      {link: "Find A Store"},
-      {link: "Signup"},
-      {link: "Nike Jouneral"},
-      {link: "Send Us Feeback"},
-    ],
-  ]
-};
+// const footerAPI = {
+//   titles: [ {title: "About Nike"},{title: "Get Help"},{title: "Company"} ],
+//   links: [
+//     [
+//       {link: "News"},
+//       {link: "Careers"},
+//       {link: "Investors"},
+//       {link: "Prupose"},
+//       {link: "Sustainability"},
+//     ],
+//     [
+//       {link: "Order Status"},
+//       {link: "Shipping & Delivery"},
+//       {link: "Payment Options"},
+//       {link: "Gift Card Balance"},
+//       {link: "Contact Us"},
+//       {link: "FAQ"},
+//       {link: "Blog"},
+//     ],
+//     [
+//       {link: "Gift Cards"},
+//       {link: "Promotions"},
+//       {link: "Find A Store"},
+//       {link: "Signup"},
+//       {link: "Nike Jouneral"},
+//       {link: "Send Us Feeback"},
+//     ],
+//   ]
+// };
 
 
-export { heroapi, footerAPI, story, sneaker, highlight, toprateslaes, popularsales };
+
+
+
+export const footerLinks = [
+    {
+        title: "Products",
+        links: [
+            { name: "Air Force 1", link: "/" },
+            { name: "Air Max 1", link: "/" },
+            { name: "Air Jordan 1", link: "/" },
+            { name: "Air Force 2", link: "/" },
+            { name: "Nike Waffle Racer", link: "/" },
+            { name: "Nike Cortez", link: "/" },
+        ],
+    },
+    {
+        title: "Help",
+        links: [
+            { name: "About us", link: "/" },
+            { name: "FAQs", link: "/" },
+            { name: "How it works", link: "/" },
+            { name: "Privacy policy", link: "/" },
+            { name: "Payment policy", link: "/" },
+        ],
+    },
+    {
+        title: "Get in touch",
+        links: [
+            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
+            { name: "+92554862354", link: "tel:+92554862354" },
+        ],
+    },
+];
+
+export const socialMedia = [
+    { src: facebook, alt: "facebook logo" },
+    { src: twitter, alt: "twitter logo" },
+    { src: instagram, alt: "instagram logo" },
+];
+
+
+export { heroapi,  story, sneaker, highlight, toprateslaes, popularsales };

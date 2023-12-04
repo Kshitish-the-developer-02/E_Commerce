@@ -48,10 +48,7 @@ import { useNavigate } from 'react-router-dom'
 
 
 function Footer() {
-  const navigate=useNavigate();
-  const clickEvent=()=>{
-        navigate('/login');
-  }
+  
   return (
        <footer className=' max-container'>
         <div className=' flex justify-between items-start gap-20 flex-wrap max-lg:flex col'>
@@ -77,10 +74,6 @@ function Footer() {
                 ))}
               </div>
 
-                <div className=' text-white flex items-center justify-center gap-5 mt-5 ml-4'>
-                    <h1> for be a member:</h1>
-                    <button className=' border w-[100px] rounded-full bg-orange-700' onClick={clickEvent}>login</button>
-                </div>
           </div>
 {/* //footerlink */}
           <div className='  mr-2 ml-2  mt-2 flex flex-1 justify-between lg:gap=20 gap-10 flex-wrap'>

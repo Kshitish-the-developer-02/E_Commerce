@@ -7,6 +7,7 @@ import Navbar from './components/Navbar.jsx';
 function Homepage() {
   return (
    <>
+     {/* <Navbar2/> */}
      <Navbar/>
       <Cart />
       <main className="flex flex-col gap-16 relative">

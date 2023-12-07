@@ -7,6 +7,7 @@ import Homepage from "./Homepage.jsx";
 import Product from "./components/new page/Product.jsx";
 import StartPage from "./components/starter page/StartPage.jsx";
 
+
 const App = () => {
   return (
     <>
